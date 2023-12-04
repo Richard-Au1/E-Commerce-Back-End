@@ -1,7 +1,7 @@
 # 13 Object-Relational Mapping (ORM): E-Commerce Back End
 
 ## Description:
-Employeers are able to check departments, profession in the department, the employees at the company. They can see who the managers of certain employee are as well as the salary that correlates to each profession. The user can update an employee's profession to a different profession and have the information be correctly represented after the change. 
+E-Commerce is found throughout the world whenever a individual shops online. Allows businesses to expand their influence to a global scale as compared to a regional scale. Internet shopping has become more convinent for many consumers including being able to shop at anytime if the consumer has a cellular device. This app displays how some E-Commerce codes work with user request, server response, and updating/deleting inventory.
 
 ## Table of Contents
 - [Installation](#installation)
@@ -13,7 +13,7 @@ Employeers are able to check departments, profession in the department, the empl
 
 ## Installation
 
-First the user will have to clone the repository at: 
+First the user will have to clone the repository at: https://github.com/Richard-Au1/E-Commerce-Back-End
 
 The user can then install node by typing in the terminal "npm i".
 
@@ -31,7 +31,7 @@ The user will have to log into their mysql shell (mysql -u root -p). This will p
 
 To start the app the user will need to type in (npm start). The server will start and then the user can use insomnia or postman to check the CRUD operations are working correctly that is shown in the video below.
 
-
+https://drive.google.com/file/d/1_GRZ93s9VmIGeVD2OTtNF-zTiFLjH0EA/view 
 
 ## License
 This project is licensed under the MIT license.
