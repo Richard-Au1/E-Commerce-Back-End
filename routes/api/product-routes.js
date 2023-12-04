@@ -24,9 +24,30 @@ router.get('/', (req, res) => {
     });
 });
 
-// get one product
+// get one product, find a single product by its `id', be sure to include its associated Category and Tag data
 router.get('/:id', (req, res) => {
-  // find a single product by its `id', be sure to include its associated Category and Tag data
+  Product.findOne({
+    where: {
+      id: req.params.id,
+    },
+    attributes: ["id", "product_name", "price", "stock", "category_id"],
+    include: [
+      {
+        model: Category,
+        attributes: ["id", "category_name"],
+      },
+      {
+        model: Tag,
+        attributes: ["id", "tag_name"],
+      },
+    ],
+  })
+    .then((data) => {
+      res.json(data);
+    })
+    .catch((err) => {
+      res.status(400).json(err);
+    });
 });
 
 // create new product
